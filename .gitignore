@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# 本地文件（不入库）
+*.zip
+*封面图*
+# 子目录中非 README 的 md（微信文章）
+/*/*.md
+!/*/README.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 数据/模型文件
+*.pth
+*.ckpt
+*.h5
+*.pkl
+data/
+outputs/
