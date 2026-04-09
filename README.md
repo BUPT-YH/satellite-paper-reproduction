@@ -16,6 +16,7 @@
 | 4 | Modeling Interference From Millimeter Wave and Terahertz Bands Cross-Links in Low Earth Orbit Satellite Networks for 6G and Beyond | JSAC 2024 | mmWave/THz星间链路、干扰建模、6G | [`[4-JSAC-2024]Modeling_Interference...`](./[4-JSAC-2024]Modeling_Interference_From_Millimeter_Wave_and_Terahertz_Bands_Cross-Links_in_Low_Earth_Orbit_Satellite_Networks_for_6G_and_Beyond) |
 | 5 | Analysis Method for Downlink Co-Frequency Interference in NGSO Satellite Communication Systems With Information Geometry | TWC 2025 | 信息几何、共频干扰分析、矩阵流形 | [`[5-TWC-2025]Analysis_Method...`](./[5-TWC-2025]Analysis_Method_for_Downlink_Co-Frequency_Interference_in_NGSO_Satellite_Communication_Systems_With_Information_Geometry) |
 | 6 | Feasibility Analysis of In-Band Coexistence in Dense LEO Satellite Communication Systems | TWC 2025 | 同频共存、干扰分析、卫星选择策略 | [`[6-TWC-2025]Feasibility_Analysis...`](./[6-TWC-2025]Feasibility_Analysis_of_In-Band_Coexistence_in_Dense_LEO_Satellite_Communication_Systems) |
+| 7 | Resource Allocation and Load Balancing for Beam Hopping Scheduling in Satellite-Terrestrial Communications: A Cooperative Satellite Approach | TWC 2025 | 多星协作、跳波束调度、DRL资源分配、ISL负载均衡 | [`[7-TWC-2025]Resource_Allocation...`](./[7-TWC-2025]Resource_Allocation_and_Load_Balancing_for_Beam_Hopping_Scheduling_in_Satellite-Terrestrial_Communications_A_Cooperative_Satellite_Approach) |
 
 ## 快速使用
 
