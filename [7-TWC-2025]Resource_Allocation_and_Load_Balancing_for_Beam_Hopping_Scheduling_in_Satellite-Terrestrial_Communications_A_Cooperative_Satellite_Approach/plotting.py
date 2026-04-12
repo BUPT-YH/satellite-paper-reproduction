@@ -21,24 +21,26 @@ plt.rcParams['font.size'] = 12
 
 def plot_fig3(training_rewards_list, save_path='output/fig3_training_reward.png'):
     """
-    Fig.3: DQN训练期间的平均奖励曲线
+    Fig.3: DQN训练期间的平均奖励曲线 (各卫星分别显示, 匹配论文)
     training_rewards_list: 各卫星的训练奖励列表
     """
     fig, ax = plt.subplots(figsize=cfg.FIG_SIZE_SINGLE)
 
-    # 计算平均奖励和滑动平均
     all_rewards = np.array(training_rewards_list)
-    avg_rewards = np.mean(all_rewards, axis=0)
-
-    # 滑动平均 (50时隙窗口)
+    n_sat = all_rewards.shape[0]
     window = 50
-    smooth = np.convolve(avg_rewards, np.ones(window)/window, mode='valid')
+    colors_per_sat = ['#E63946', '#457B9D', '#2A9D8F', '#E9C46A']
 
-    ax.plot(avg_rewards, alpha=0.3, color=cfg.COLORS['proposed'], linewidth=0.5)
-    ax.plot(range(window-1, len(avg_rewards)), smooth,
-            color=cfg.COLORS['proposed'], linewidth=2, label='Sliding Average (50)')
+    # 各卫星分别绘制原始曲线(淡) + 滑动平均(实线)
+    for s in range(min(n_sat, 4)):
+        raw = all_rewards[s]
+        smooth = np.convolve(raw, np.ones(window)/window, mode='valid')
+        ax.plot(raw, alpha=0.15, color=colors_per_sat[s], linewidth=0.3)
+        ax.plot(range(window-1, len(raw)), smooth,
+                color=colors_per_sat[s], linewidth=1.5,
+                label=f'Satellite {s+1}')
 
-    ax.set_xlabel('Time Slot')
+    ax.set_xlabel('Training Time Slot')
     ax.set_ylabel('Average Reward')
     ax.set_title('Fig.3: Average Reward During Training (β=0.7, 35 Gbps)')
     ax.legend()

@@ -114,9 +114,9 @@ def run_fig5():
     print("\n[Fig.5] Method Comparison...")
     t0 = time.time()
 
-    traffic_rates = list(np.arange(14, 41, 6))
+    traffic_rates = [14, 18, 22, 26, 30, 34, 38]  # 论文Fig.5: 7个流量点
     methods = ['proposed', 'drl_avoid', 'max_uswg', 'pre_scheduling']
-    n_cells_per_sat = 19
+    n_cells_per_sat = cfg.omega_s  # 19 (论文Table I)
     n_cells = 160
     n_slots = 200
 
@@ -173,7 +173,7 @@ def run_fig7():
     print("\n[Fig.7] Ablation Study...")
     t0 = time.time()
 
-    traffic_rates = list(np.arange(14, 41, 6))
+    traffic_rates = [14, 18, 22, 26, 30, 34, 38]  # 论文Fig.7: 7个流量点
     methods = ['proposed', 'without_drl', 'without_ra', 'without_lb', 'original']
     n_slots = 200
 
@@ -213,7 +213,7 @@ def run_fig8():
 
     for n_sat in ns_range:
         n_cells = n_sat * 10
-        n_cells_per_sat = max(10, 37 * n_sat // 16)
+        n_cells_per_sat = max(10, 19 * n_sat // 16)  # 按论文比例缩放 (Ns=16→19)
         print(f"  Ns={n_sat}")
         for method in methods:
             use_drl = method not in ('without_drl', 'original')

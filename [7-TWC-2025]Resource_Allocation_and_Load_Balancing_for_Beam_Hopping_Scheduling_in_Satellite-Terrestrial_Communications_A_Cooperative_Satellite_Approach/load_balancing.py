@@ -1,6 +1,7 @@
 """
 负载均衡模块
 实现基于ISL的卫星间负载均衡 (Algorithm 4)
+修正: 使用覆盖信息正确分配流量
 """
 
 import numpy as np
@@ -28,25 +29,21 @@ def check_feasibility_p3a(lambda_arrival, U_service):
     return total_arrival < total_service * 0.85
 
 
-def load_balancing_sufficient(lambda_arrival, U_service, n_sat, n_cells_per_sat):
+def load_balancing_sufficient(lambda_si_init, U_service, n_sat, n_cells_per_sat):
     """
     负载均衡 — 充足场景 (P3a)
     最小化平均等待时间 + ISL传输开销
     混合块逐次近似算法 (Algorithm 4, steps 1-7)
+    lambda_si_init: 初始流量分配 (已按覆盖卫星数均分)
     """
     max_cells = n_cells_per_sat
-    n_arr = len(lambda_arrival)
-
-    # 初始化: 均匀分配
-    lambda_si = np.zeros((n_sat, max_cells))
+    lambda_si = lambda_si_init.copy()
     mu_si = np.zeros((n_sat, max_cells))
 
-    for i in range(min(n_arr, max_cells)):
-        for s in range(n_sat):
-            lambda_si[s, i] = lambda_arrival[min(i, n_arr - 1)] / n_sat
+    for s in range(n_sat):
+        for i in range(max_cells):
             mu_si[s, i] = lambda_si[s, i] * 1.1 + cfg.delta_lb
 
-    # 初始化 g (47)
     g_si = np.sqrt(np.maximum(lambda_si, 0) / np.maximum(mu_si, 1e-10))
 
     for p in range(cfg.lb_max_iter):
@@ -60,7 +57,6 @@ def load_balancing_sufficient(lambda_arrival, U_service, n_sat, n_cells_per_sat)
                     mu_si[s, i] = max(lambda_si[s, i] + cfg.delta_lb,
                                       lambda_si[s, i] * (1 + 1.0 / (U / 2 * g ** 2 + 1e-10)))
 
-        # 更新 g (47)
         g_si = np.sqrt(np.maximum(lambda_si, 0) / np.maximum(mu_si, 1e-10))
 
         if np.max(np.abs(lambda_si - lambda_old)) < cfg.lb_tol:
@@ -69,45 +65,53 @@ def load_balancing_sufficient(lambda_arrival, U_service, n_sat, n_cells_per_sat)
     return lambda_si
 
 
-def load_balancing_overload(lambda_arrival, U_service, n_sat, n_cells_per_sat):
+def load_balancing_overload(lambda_si_init, U_service, n_sat, n_cells_per_sat):
     """
     负载均衡 — 过载场景 (P3b)
     最小化最大负载比例 (均衡负载)
     """
-    max_cells = n_cells_per_sat
-    lambda_si = np.zeros((n_sat, max_cells))
-    n_arr = len(lambda_arrival)
+    lambda_si = lambda_si_init.copy()
+    total_service = U_service.sum(axis=1)
 
-    # 按服务能力比例分配
-    total_service = U_service.sum(axis=1)  # (n_sat,)
-
-    for i in range(min(n_arr, max_cells)):
-        total_cap = total_service.sum()
-        if total_cap > 0:
-            for s in range(n_sat):
-                lambda_si[s, i] = lambda_arrival[min(i, n_arr - 1)] * total_service[s] / total_cap
-        else:
-            for s in range(n_sat):
-                lambda_si[s, i] = lambda_arrival[min(i, n_arr - 1)] / n_sat
+    for s in range(n_sat):
+        for i in range(n_cells_per_sat):
+            total_cap = total_service.sum()
+            if total_cap > 0 and lambda_si[s, i] > 0:
+                lambda_si[s, i] *= total_service[s] / (total_cap / n_sat)
 
     return lambda_si
 
 
 def run_load_balancing(lambda_arrival, throughput_history, n_sat, n_cells,
-                        n_cells_per_sat, cell_indices, n_beams):
+                       n_cells_per_sat, cell_indices, n_beams, cell_to_sats=None):
     """
     执行负载均衡 (Algorithm 4)
+    cell_indices: list of lists, cell_indices[s] = global cell indices covered by satellite s
+    cell_to_sats: dict mapping global cell index -> list of covering satellite indices
     """
-    # 服务速率矩阵
     U_service = compute_avg_service_rate(throughput_history, n_sat, n_cells_per_sat)
 
-    # 将lambda_arrival截断或扩展到 n_cells_per_sat
-    n_arr = len(lambda_arrival)
-    lambda_local = np.ones(n_cells_per_sat) * np.mean(lambda_arrival)
-    for i in range(min(n_arr, n_cells_per_sat)):
-        lambda_local[i] = lambda_arrival[i]
+    # 初始化: 按覆盖卫星数均分流量 (关键修正)
+    lambda_si = np.zeros((n_sat, n_cells_per_sat))
 
-    if check_feasibility_p3a(lambda_local, U_service):
-        return load_balancing_sufficient(lambda_local, U_service, n_sat, n_cells_per_sat)
+    for s in range(n_sat):
+        cells = cell_indices[s] if s < len(cell_indices) else list(range(n_cells_per_sat))
+        for local_i in range(n_cells_per_sat):
+            if local_i < len(cells):
+                cell_idx = cells[local_i] % n_cells
+            else:
+                cell_idx = local_i % n_cells
+
+            # 按覆盖卫星数均分该小区流量
+            if cell_to_sats and cell_idx in cell_to_sats:
+                n_covering = len(cell_to_sats[cell_idx])
+            else:
+                n_covering = max(1, sum(1 for sat_cells in cell_indices
+                                        if cell_idx in [c % n_cells for c in sat_cells]))
+
+            lambda_si[s, local_i] = lambda_arrival[cell_idx] / max(n_covering, 1)
+
+    if check_feasibility_p3a(lambda_arrival, U_service):
+        return load_balancing_sufficient(lambda_si, U_service, n_sat, n_cells_per_sat)
     else:
-        return load_balancing_overload(lambda_local, U_service, n_sat, n_cells_per_sat)
+        return load_balancing_overload(lambda_si, U_service, n_sat, n_cells_per_sat)

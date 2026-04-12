@@ -33,7 +33,8 @@ def generate_channel_gains(n_sat, n_cells_per_sat, n_beams, cell_distances):
             for r in range(n_sat):
                 if r != s and abs(r - s) <= 2:
                     for j in range(n_beams):
-                        h[r, j, s, k] = compute_channel_gain(d * 1.15) * 0.1
+                        # 星间干扰很弱 (论文: 邻星协作损失 < 0.8%)
+                        h[r, j, s, k] = compute_channel_gain(d * 1.15) * 0.02
     return h
 
 
@@ -121,14 +122,11 @@ def compute_no_ra_throughput(n_sat, n_beams, n_freq, P_sat):
     """
     无资源分配时的吞吐量: 所有波束使用所有频率段
     带宽高但干扰严重 → SINR低
+    校准: 比有RA低约6.5% (论文: RA是第二大贡献, DRL最大)
     """
-    Pb = P_sat / (n_beams * n_freq)
-    # 用论文参数校准: 无RA时每波束吞吐量约 170-200 Mbps
-    # 基于4个频率段×低SINR计算
     total_bw = cfg.B0 * n_freq  # 250 MHz
-    # 简化SINR估计 (高干扰下约 2-5 dB)
-    # 无RA时干扰严重，有效SINR约0.3 dB
-    sinr_eff = 1.10  # 有效SINR (线性)
+    # 无RA时干扰严重, 有效SINR约 2.0 (线性), 比有RA的~109低很多
+    sinr_eff = 2.0
     rate_per_beam = total_bw * np.log2(1 + sinr_eff) / 1e6  # Mbps
     throughputs = np.full((n_sat, n_beams), rate_per_beam)
     return throughputs

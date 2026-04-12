@@ -150,22 +150,36 @@ class DQNAgent:
 
 class SmartScheduler:
     """
-    模拟训练好的DRL策略 — 基于缓冲区数据量选择最优小区
-    代表DQN充分训练后学到的调度策略
-    与贪心策略相同, 性能差异通过链路容量效率因子体现
+    模拟训练好的DRL策略 — beta感知调度
+    高beta: 优先选数据多的小区 (最大化吞吐量)
+    低beta: 考虑延迟公平性 (降低延迟度量)
     """
-    def __init__(self, n_cells, n_beams):
+    def __init__(self, n_cells, n_beams, beta=0.7):
         self.n_cells = n_cells
         self.n_beams = n_beams
+        self.beta = beta
 
     def select_action(self, state_matrix):
         total_data = state_matrix.sum(axis=1)
-        action = np.argsort(total_data)[-self.n_beams:].tolist()
+        if self.beta >= 0.9:
+            # 几乎只关注吞吐量: 选数据最多的小区
+            action = np.argsort(total_data)[-self.n_beams:].tolist()
+        else:
+            # 综合考虑数据量和延迟
+            delays = np.zeros(self.n_cells)
+            for i in range(self.n_cells):
+                total = max(state_matrix[i].sum(), 1e-10)
+                weighted = sum(t * state_matrix[i, t] for t in range(cfg.Tth))
+                delays[i] = weighted / total
+            # beta控制吞吐量vs延迟的权重
+            score = self.beta * total_data / max(total_data.max(), 1e-10) + \
+                    (1 - self.beta) * delays / max(delays.max(), 1e-10)
+            action = np.argsort(score)[-self.n_beams:].tolist()
         return action
 
 
 class GreedyBHScheduler:
-    """贪心跳波束调度器 — 基准方法"""
+    """贪心跳波束调度器 — 只看数据量, 不考虑延迟"""
     def __init__(self, n_cells, n_beams):
         self.n_cells = n_cells
         self.n_beams = n_beams
