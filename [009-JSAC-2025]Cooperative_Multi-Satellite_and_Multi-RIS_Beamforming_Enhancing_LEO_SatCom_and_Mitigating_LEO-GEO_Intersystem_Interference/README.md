@@ -41,6 +41,7 @@ python run_reproduction.py
 ### 仿真图表
 | 图号 | 内容 | 状态 |
 |------|------|------|
+| Fig. 1 | 系统模型 (从论文提取) | [OK] |
 | Fig. 2 | Min SINR vs PT (κN=20dB) | [OK] |
 | Fig. 3 | Min SINR vs PT (κN=0dB) | [OK] |
 | Fig. 4 | Min SINR vs ζ (κN=20dB) | [OK] |
