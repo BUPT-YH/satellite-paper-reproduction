@@ -10,15 +10,17 @@
 
 | # | 论文 | 期刊 | 关键词 | 目录 |
 |---|------|------|--------|------|
-| 1 | Avoiding Self-Interference in Megaconstellations Through Cooperative Satellite Routing and Frequency Assignment | JSAC 2024 | 星座自干扰避免、协作路由、频率分配 | [`[1-JSAC-2024]Avoiding_Self-Interference...`](./[1-JSAC-2024]Avoiding_Self-Interference_in_Megaconstellations_Through_Cooperative_Satellite_Routing_and_Frequency_Assignment) |
-| 2 | Joint Power Allocation and Beam Scheduling in Beam-Hopping Satellites: A Two-Stage Framework With a Probabilistic Perspective | TWC 2024 | 波束跳变、功率分配、两阶段框架 | [`[2-TWC-2024]Joint_Power_Allocation...`](./[2-TWC-2024]Joint_Power_Allocation_and_Beam_Scheduling_in_Beam-Hopping_Satellites_A_Two-Stage_Framework_With_a_Probabilistic_Perspective) |
-| 3 | Beam Footprint Design, Scheduling, and Spectrum Assignment in Low Earth Orbit Mega-Constellations | TVT 2025 | 波束足迹设计、用户调度、频谱分配 | [`[3-TVT-2025]Beam_Footprint_Design...`](./[3-TVT-2025]Beam_Footprint_Design_Scheduling_and_Spectrum_Assignment_in_Low_Earth_Orbit_Mega-Constellations) |
-| 4 | Modeling Interference From Millimeter Wave and Terahertz Bands Cross-Links in Low Earth Orbit Satellite Networks for 6G and Beyond | JSAC 2024 | mmWave/THz星间链路、干扰建模、6G | [`[4-JSAC-2024]Modeling_Interference...`](./[4-JSAC-2024]Modeling_Interference_From_Millimeter_Wave_and_Terahertz_Bands_Cross-Links_in_Low_Earth_Orbit_Satellite_Networks_for_6G_and_Beyond) |
-| 5 | Analysis Method for Downlink Co-Frequency Interference in NGSO Satellite Communication Systems With Information Geometry | TWC 2025 | 信息几何、共频干扰分析、矩阵流形 | [`[5-TWC-2025]Analysis_Method...`](./[5-TWC-2025]Analysis_Method_for_Downlink_Co-Frequency_Interference_in_NGSO_Satellite_Communication_Systems_With_Information_Geometry) |
-| 6 | Feasibility Analysis of In-Band Coexistence in Dense LEO Satellite Communication Systems | TWC 2025 | 同频共存、干扰分析、卫星选择策略 | [`[6-TWC-2025]Feasibility_Analysis...`](./[6-TWC-2025]Feasibility_Analysis_of_In-Band_Coexistence_in_Dense_LEO_Satellite_Communication_Systems) |
-| 7 | Resource Allocation and Load Balancing for Beam Hopping Scheduling in Satellite-Terrestrial Communications: A Cooperative Satellite Approach | TWC 2025 | 多星协作、跳波束调度、DRL资源分配、ISL负载均衡 | [`[7-TWC-2025]Resource_Allocation...`](./[7-TWC-2025]Resource_Allocation_and_Load_Balancing_for_Beam_Hopping_Scheduling_in_Satellite-Terrestrial_Communications_A_Cooperative_Satellite_Approach) |
-| 8 | Semantic Satellite Communications Based on Generative Foundation Model | JSAC 2025 | 语义通信、生成式基础模型、知识图谱 | [`[8-JSAC-2025]Semantic_Satellite...`](./[8-JSAC-2025]Semantic_Satellite_Communications_Based_on_Generative_Foundation_Model) |
-| 9 | Cooperative Multi-Satellite and Multi-RIS Beamforming: Enhancing LEO SatCom and Mitigating LEO-GEO Intersystem Interference | JSAC 2025 | 多星协作、RIS波束赋形、LEO-GEO干扰抑制、RZF预编码 | [`[9-JSAC-2025]Cooperative_Multi-Satellite...`](./[9-JSAC-2025]Cooperative_Multi-Satellite_and_Multi-RIS_Beamforming_Enhancing_LEO_SatCom_and_Mitigating_LEO-GEO_Intersystem_Interference) |
+| 001 | Avoiding Self-Interference in Megaconstellations Through Cooperative Satellite Routing and Frequency Assignment | JSAC 2024 | 星座自干扰避免、协作路由、频率分配 | [`[001-JSAC-2024]Avoiding_Self-Interference...`](./[001-JSAC-2024]Avoiding_Self-Interference_in_Megaconstellations_Through_Cooperative_Satellite_Routing_and_Frequency_Assignment) |
+| 002 | Joint Power Allocation and Beam Scheduling in Beam-Hopping Satellites: A Two-Stage Framework With a Probabilistic Perspective | TWC 2024 | 波束跳变、功率分配、两阶段框架 | [`[002-TWC-2024]Joint_Power_Allocation...`](./[002-TWC-2024]Joint_Power_Allocation_and_Beam_Scheduling_in_Beam-Hopping_Satellites_A_Two-Stage_Framework_With_a_Probabilistic_Perspective) |
+| 003 | Beam Footprint Design, Scheduling, and Spectrum Assignment in Low Earth Orbit Mega-Constellations | TVT 2025 | 波束足迹设计、用户调度、频谱分配 | [`[003-TVT-2025]Beam_Footprint_Design...`](./[003-TVT-2025]Beam_Footprint_Design_Scheduling_and_Spectrum_Assignment_in_Low_Earth_Orbit_Mega-Constellations) |
+| 004 | Modeling Interference From Millimeter Wave and Terahertz Bands Cross-Links in Low Earth Orbit Satellite Networks for 6G and Beyond | JSAC 2024 | mmWave/THz星间链路、干扰建模、6G | [`[004-JSAC-2024]Modeling_Interference...`](./[004-JSAC-2024]Modeling_Interference_From_Millimeter_Wave_and_Terahertz_Bands_Cross-Links_in_Low_Earth_Orbit_Satellite_Networks_for_6G_and_Beyond) |
+| 005 | Analysis Method for Downlink Co-Frequency Interference in NGSO Satellite Communication Systems With Information Geometry | TWC 2025 | 信息几何、共频干扰分析、矩阵流形 | [`[005-TWC-2025]Analysis_Method...`](./[005-TWC-2025]Analysis_Method_for_Downlink_Co-Frequency_Interference_in_NGSO_Satellite_Communication_Systems_With_Information_Geometry) |
+| 006 | Feasibility Analysis of In-Band Coexistence in Dense LEO Satellite Communication Systems | TWC 2025 | 同频共存、干扰分析、卫星选择策略 | [`[006-TWC-2025]Feasibility_Analysis...`](./[006-TWC-2025]Feasibility_Analysis_of_In-Band_Coexistence_in_Dense_LEO_Satellite_Communication_Systems) |
+| 007 | Resource Allocation and Load Balancing for Beam Hopping Scheduling in Satellite-Terrestrial Communications: A Cooperative Satellite Approach | TWC 2025 | 多星协作、跳波束调度、DRL资源分配、ISL负载均衡 | [`[007-TWC-2025]Resource_Allocation...`](./[7-TWC-2025]Resource_Allocation_and_Load_Balancing_for_Beam_Hopping_Scheduling_in_Satellite-Terrestrial_Communications_A_Cooperative_Satellite_Approach) |
+| 008 | Semantic Satellite Communications Based on Generative Foundation Model | JSAC 2025 | 语义通信、生成式基础模型、知识图谱 | [`[008-JSAC-2025]Semantic_Satellite...`](./[008-JSAC-2025]Semantic_Satellite_Communications_Based_on_Generative_Foundation_Model) |
+| 009 | Cooperative Multi-Satellite and Multi-RIS Beamforming: Enhancing LEO SatCom and Mitigating LEO-GEO Intersystem Interference | JSAC 2025 | 多星协作、RIS波束赋形、LEO-GEO干扰抑制、RZF预编码 | [`[009-JSAC-2025]Cooperative_Multi-Satellite...`](./[009-JSAC-2025]Cooperative_Multi-Satellite_and_Multi-RIS_Beamforming_Enhancing_LEO_SatCom_and_Mitigating_LEO-GEO_Intersystem_Interference) |
+| 010 | LLM-Aided Spectrum-Sharing LEO Satellite Communications | JSAC 2026 | LLM辅助频谱共享、中断概率、资源分配 | [`[010-JSAC-2026]LLM-Aided...`](./[010-JSAC-2026]LLM-Aided_Spectrum-Sharing_LEO_Satellite_Communications) |
+| 011 | Achieving Covert Communications in Ultra-Dense LEO Satellite Systems by Exploiting Interference and Directional Uncertainty | JSAC 2026 | 隐蔽通信、干扰利用、方向不确定性 | [`[011-JSAC-2026]Achieving_Covert...`](./[011-JSAC-2026]Achieving_Covert_Communications_in_Ultra-Dense_LEO_Satellite_Systems_by_Exploiting_Interference_and_Directional_Uncertainty) |
 
 ## 快速使用
 
@@ -27,7 +29,7 @@
 git clone https://github.com/BUPT-YH/satellite-paper-reproduction.git
 
 # 进入某篇论文的目录，按 README 说明运行
-cd "[1-JSAC-2024]Avoiding_Self-Interference_in_Megaconstellations_Through_Cooperative_Satellite_Routing_and_Frequency_Assignment"
+cd "[001-JSAC-2024]Avoiding_Self-Interference_in_Megaconstellations_Through_Cooperative_Satellite_Routing_and_Frequency_Assignment"
 python run_reproduction.py
 ```
 
