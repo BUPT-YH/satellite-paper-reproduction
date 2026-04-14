@@ -24,7 +24,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/BUPU-YH/satellite-paper-reproduction.git
+git clone https://github.com/BUPT-YH/satellite-paper-reproduction.git
 
 # 进入某篇论文的目录，按 README 说明运行
 cd "[1-JSAC-2024]Avoiding_Self-Interference_in_Megaconstellations_Through_Cooperative_Satellite_Routing_and_Frequency_Assignment"
@@ -54,7 +54,7 @@ pip install numpy matplotlib scipy scikit-learn
 ## 关注我们
 
 - **公众号**：静水Tech漫步
-- **GitHub**：https://github.com/BUPU-YH
+- **GitHub**：https://github.com/BUPT-YH
 
 ---
 
