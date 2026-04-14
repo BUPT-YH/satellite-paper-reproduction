@@ -17,6 +17,8 @@
 | 5 | Analysis Method for Downlink Co-Frequency Interference in NGSO Satellite Communication Systems With Information Geometry | TWC 2025 | 信息几何、共频干扰分析、矩阵流形 | [`[5-TWC-2025]Analysis_Method...`](./[5-TWC-2025]Analysis_Method_for_Downlink_Co-Frequency_Interference_in_NGSO_Satellite_Communication_Systems_With_Information_Geometry) |
 | 6 | Feasibility Analysis of In-Band Coexistence in Dense LEO Satellite Communication Systems | TWC 2025 | 同频共存、干扰分析、卫星选择策略 | [`[6-TWC-2025]Feasibility_Analysis...`](./[6-TWC-2025]Feasibility_Analysis_of_In-Band_Coexistence_in_Dense_LEO_Satellite_Communication_Systems) |
 | 7 | Resource Allocation and Load Balancing for Beam Hopping Scheduling in Satellite-Terrestrial Communications: A Cooperative Satellite Approach | TWC 2025 | 多星协作、跳波束调度、DRL资源分配、ISL负载均衡 | [`[7-TWC-2025]Resource_Allocation...`](./[7-TWC-2025]Resource_Allocation_and_Load_Balancing_for_Beam_Hopping_Scheduling_in_Satellite-Terrestrial_Communications_A_Cooperative_Satellite_Approach) |
+| 8 | Semantic Satellite Communications Based on Generative Foundation Model | JSAC 2025 | 语义通信、生成式基础模型、知识图谱 | [`[8-JSAC-2025]Semantic_Satellite...`](./[8-JSAC-2025]Semantic_Satellite_Communications_Based_on_Generative_Foundation_Model) |
+| 9 | Cooperative Multi-Satellite and Multi-RIS Beamforming: Enhancing LEO SatCom and Mitigating LEO-GEO Intersystem Interference | JSAC 2025 | 多星协作、RIS波束赋形、LEO-GEO干扰抑制、RZF预编码 | [`[9-JSAC-2025]Cooperative_Multi-Satellite...`](./[9-JSAC-2025]Cooperative_Multi-Satellite_and_Multi-RIS_Beamforming_Enhancing_LEO_SatCom_and_Mitigating_LEO-GEO_Intersystem_Interference) |
 
 ## 快速使用
 
