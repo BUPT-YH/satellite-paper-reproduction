@@ -6,10 +6,6 @@
 
 本仓库整理了卫星通信相关论文的复现代码，每篇论文对应一个独立目录，包含完整的代码和说明文档。
 
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=BUPT-YH/satellite-paper-reproduction&type=Date)](https://www.star-history.com/#BUPT-YH/satellite-paper-reproduction&Date)
-
 ## 已复现论文
 
 | # | 论文 | 期刊 | 关键词 | 目录 |
@@ -66,3 +62,7 @@ pip install numpy matplotlib scipy scikit-learn
 ---
 
 > 感谢关注「静水Tech漫步」！如果觉得有收获，欢迎点赞、在看、转发三连！
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=BUPT-YH/satellite-paper-reproduction&type=Date)](https://www.star-history.com/#BUPT-YH/satellite-paper-reproduction&Date)
