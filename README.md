@@ -21,6 +21,7 @@
 | 009 | Cooperative Multi-Satellite and Multi-RIS Beamforming: Enhancing LEO SatCom and Mitigating LEO-GEO Intersystem Interference | JSAC 2025 | 多星协作、RIS波束赋形、LEO-GEO干扰抑制、RZF预编码 | [`[009-JSAC-2025]Cooperative_Multi-Satellite...`](./[009-JSAC-2025]Cooperative_Multi-Satellite_and_Multi-RIS_Beamforming_Enhancing_LEO_SatCom_and_Mitigating_LEO-GEO_Intersystem_Interference) |
 | 010 | LLM-Aided Spectrum-Sharing LEO Satellite Communications | JSAC 2026 | LLM辅助频谱共享、中断概率、资源分配 | [`[010-JSAC-2026]LLM-Aided...`](./[010-JSAC-2026]LLM-Aided_Spectrum-Sharing_LEO_Satellite_Communications) |
 | 011 | Achieving Covert Communications in Ultra-Dense LEO Satellite Systems by Exploiting Interference and Directional Uncertainty | JSAC 2026 | 隐蔽通信、干扰利用、方向不确定性 | [`[011-JSAC-2026]Achieving_Covert...`](./[011-JSAC-2026]Achieving_Covert_Communications_in_Ultra-Dense_LEO_Satellite_Systems_by_Exploiting_Interference_and_Directional_Uncertainty) |
+| 012 | Space-Time Beamforming for LEO Satellite Communications: Enabling Extremely Narrow Beams | TWC 2026 | 空时波束赋形、超窄波束、LEO卫星通信 | [`[012-TWC-2026]Space-Time_Beamforming...`](./[012-TWC-2026]Space-Time_Beamforming_for_LEO_Satellite_Communications_Enabling_Extremely_Narrow_Beams) |
 
 ## 快速使用
 
