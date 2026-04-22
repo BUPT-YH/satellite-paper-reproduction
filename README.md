@@ -23,6 +23,7 @@
 | 011 | Achieving Covert Communications in Ultra-Dense LEO Satellite Systems by Exploiting Interference and Directional Uncertainty | JSAC 2026 | 隐蔽通信、干扰利用、方向不确定性 | [`[011-JSAC-2026]Achieving_Covert...`](./[011-JSAC-2026]Achieving_Covert_Communications_in_Ultra-Dense_LEO_Satellite_Systems_by_Exploiting_Interference_and_Directional_Uncertainty) |
 | 012 | Space-Time Beamforming for LEO Satellite Communications: Enabling Extremely Narrow Beams | TWC 2026 | 空时波束赋形、超窄波束、LEO卫星通信 | [`[012-TWC-2026]Space-Time_Beamforming...`](./[012-TWC-2026]Space-Time_Beamforming_for_LEO_Satellite_Communications_Enabling_Extremely_Narrow_Beams) |
 | 013 | Satellite Selection for In-Band Coexistence of Dense LEO Networks | TWC 2026 | 卫星选择、同频共存、密集LEO网络 | [`[013-TWC-2026]Satellite_Selection...`](./[013-TWC-2026]Satellite_Selection_for_In-Band_Coexistence_of_Dense_LEO_Networks) |
+| 014 | Direct-to-Device Non-Terrestrial Communications: Ensuring Interference-Free GSO Coexistence | TCOM 2026 | 星地直连、GSO共存、动态用户关联、禁区切换 | [`[014-TCOM-2026]Direct-to-Device...`](./[014-TCOM-2026]Direct-to-Device_Non-Terrestrial_Communications_Ensuring_Interference-Free_GSO_Coexistence) |
 
 ## 快速使用
 
