@@ -24,6 +24,7 @@
 | 012 | Space-Time Beamforming for LEO Satellite Communications: Enabling Extremely Narrow Beams | TWC 2026 | 空时波束赋形、超窄波束、LEO卫星通信 | [`[012-TWC-2026]Space-Time_Beamforming...`](./[012-TWC-2026]Space-Time_Beamforming_for_LEO_Satellite_Communications_Enabling_Extremely_Narrow_Beams) |
 | 013 | Satellite Selection for In-Band Coexistence of Dense LEO Networks | TWC 2026 | 卫星选择、同频共存、密集LEO网络 | [`[013-TWC-2026]Satellite_Selection...`](./[013-TWC-2026]Satellite_Selection_for_In-Band_Coexistence_of_Dense_LEO_Networks) |
 | 014 | Direct-to-Device Non-Terrestrial Communications: Ensuring Interference-Free GSO Coexistence | TCOM 2026 | 星地直连、GSO共存、动态用户关联、禁区切换 | [`[014-TCOM-2026]Direct-to-Device...`](./[014-TCOM-2026]Direct-to-Device_Non-Terrestrial_Communications_Ensuring_Interference-Free_GSO_Coexistence) |
+| 015 | Beamforming Design and Satellite Selection for Realizing the Integrated Communication and Navigation in LEO Satellite Networks | TWC 2026 | 通导一体化、波束赋形、卫星选择、LEO网络 | [`[015-TWC-2026]Beamforming_Design...`](./[015-TWC-2026]Beamforming_Design_and_Satellite_Selection_for_Realizing_the_Integrated_Communication_and_Navigation_in_LEO_Satellite_Networks) |
 
 ## 快速使用
 
