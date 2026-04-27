@@ -26,6 +26,7 @@
 | 014 | Direct-to-Device Non-Terrestrial Communications: Ensuring Interference-Free GSO Coexistence | TCOM 2026 | 星地直连、GSO共存、动态用户关联、禁区切换 | [`[014-TCOM-2026]Direct-to-Device...`](./[014-TCOM-2026]Direct-to-Device_Non-Terrestrial_Communications_Ensuring_Interference-Free_GSO_Coexistence) |
 | 015 | Beamforming Design and Satellite Selection for Realizing the Integrated Communication and Navigation in LEO Satellite Networks | TWC 2026 | 通导一体化、波束赋形、卫星选择、LEO网络 | [`[015-TWC-2026]Beamforming_Design...`](./[015-TWC-2026]Beamforming_Design_and_Satellite_Selection_for_Realizing_the_Integrated_Communication_and_Navigation_in_LEO_Satellite_Networks) |
 | 016 | Coverage Diversity in Mega Satellite Constellations: A Stochastic Geometry Approach | TWC 2025 | 覆盖多样性、巨型星座、随机几何 | [`[016-TWC-2025]Coverage_Diversity...`](./[016-TWC-2025]Coverage_Diversity_in_Mega_Satellite_Constellations_A_Stochastic_Geometry_Approach) |
+| 017 | Joint Resource Management and Load Balancing in Multi-Satellite Beam Hopping With Interference Suppression: An Energy Minimization Perspective | TWC 2026 | 多星跳波束、Lyapunov资源管理、能量最小化、负载均衡 | [`[017-TWC-2026]Joint_Resource...`](./[017-TWC-2026]Joint_Resource_Management_and_Load_Balancing_in_Multi-Satellite_Beam_Hopping_With_Interference_Suppression_An_Energy_Minimization_Perspective) |
 
 ## 快速使用
 
