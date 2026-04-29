@@ -28,7 +28,6 @@
 | 016 | Coverage Diversity in Mega Satellite Constellations: A Stochastic Geometry Approach | TWC 2025 | 覆盖多样性、巨型星座、随机几何 | [`[016-TWC-2025]Coverage_Diversity...`](./[016-TWC-2025]Coverage_Diversity_in_Mega_Satellite_Constellations_A_Stochastic_Geometry_Approach) |
 | 017 | Joint Resource Management and Load Balancing in Multi-Satellite Beam Hopping With Interference Suppression: An Energy Minimization Perspective | TWC 2026 | 多星跳波束、Lyapunov资源管理、能量最小化、负载均衡 | [`[017-TWC-2026]Joint_Resource...`](./[017-TWC-2026]Joint_Resource_Management_and_Load_Balancing_in_Multi-Satellite_Beam_Hopping_With_Interference_Suppression_An_Energy_Minimization_Perspective) |
 | 018 | A Dynamic Co-Frequency Interference Analysis Model Based on Time-Elevation Interference Spectrum for NGSO Mega-Constellations | TWC 2026 | 共频干扰分析、时-仰角干扰谱、NGSO巨型星座 | [`[018-TWC-2026]A_Dynamic...`](./[018-TWC-2026]A_Dynamic_Co-Frequency_Interference_Analysis_Model_Based_on_Time-Elevation_Interference_Spectrum_for_NGSO_Mega-Constellations) |
-| 019 | Enabling Scalable Distributed Beamforming via Networked LEO Satellites Toward 6G | TWC 2026 | 分布式波束赋形、网络化LEO卫星、6G | [`[019-TWC-2026]Enabling_Scalable...`](./[019-TWC-2026]Enabling_Scalable_Distributed_Beamforming_via_Networked_LEO_Satellites_Toward_6G) |
 
 ## 快速使用
 
