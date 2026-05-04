@@ -29,6 +29,7 @@
 | 017 | Joint Resource Management and Load Balancing in Multi-Satellite Beam Hopping With Interference Suppression: An Energy Minimization Perspective | TWC 2026 | 多星跳波束、Lyapunov资源管理、能量最小化、负载均衡 | [`[017-TWC-2026]Joint_Resource...`](./[017-TWC-2026]Joint_Resource_Management_and_Load_Balancing_in_Multi-Satellite_Beam_Hopping_With_Interference_Suppression_An_Energy_Minimization_Perspective) |
 | 018 | A Dynamic Co-Frequency Interference Analysis Model Based on Time-Elevation Interference Spectrum for NGSO Mega-Constellations | TWC 2026 | 共频干扰分析、时-仰角干扰谱、NGSO巨型星座 | [`[018-TWC-2026]A_Dynamic...`](./[018-TWC-2026]A_Dynamic_Co-Frequency_Interference_Analysis_Model_Based_on_Time-Elevation_Interference_Spectrum_for_NGSO_Mega-Constellations) |
 | 019 | Semantic Communication Enabled 6G-NTN Framework: A Novel Denoising and Gateway Hop Integration Mechanism | TWC 2025 | 语义通信、6G非地面网络、去噪机制、网关跳集成 | [`[019-TWC-2025]Semantic_Communication...`](./[019-TWC-2025]Semantic_Communication_Enabled_6G-NTN_Framework_A_Novel_Denoising_and_Gateway_Hop_Integration_Mechanism) |
+| 020 | Time-Division Spectrum Sharing and Coordination Between Beam-Hopping NGSO Satellites and Terrestrial Networks | WCL 2026 | 时分频谱共享、跳波束、星地协同 | [`[020-WCL-2026]Time-Division...`](./[020-WCL-2026]Time-Division_Spectrum_Sharing_and_Coordination_Between_Beam-Hopping_NGSO_Satellites_and_Terrestrial_Networks) |
 
 ## 快速使用
 
