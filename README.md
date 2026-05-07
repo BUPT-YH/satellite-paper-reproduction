@@ -31,6 +31,7 @@
 | 019 | Semantic Communication Enabled 6G-NTN Framework: A Novel Denoising and Gateway Hop Integration Mechanism | TWC 2025 | 语义通信、6G非地面网络、去噪机制、网关跳集成 | [`[019-TWC-2025]Semantic_Communication...`](./[019-TWC-2025]Semantic_Communication_Enabled_6G-NTN_Framework_A_Novel_Denoising_and_Gateway_Hop_Integration_Mechanism) |
 | 020 | Time-Division Spectrum Sharing and Coordination Between Beam-Hopping NGSO Satellites and Terrestrial Networks | WCL 2026 | 时分频谱共享、跳波束、星地协同 | [`[020-WCL-2026]Time-Division...`](./[020-WCL-2026]Time-Division_Spectrum_Sharing_and_Coordination_Between_Beam-Hopping_NGSO_Satellites_and_Terrestrial_Networks) |
 | 021 | Joint Illumination Power and Band Allocation for Multi-Beam LEO Satellites With Beam-Hopping Using Mixed-Integer Linear Programming | TWC 2026 | MILP跳波束、功率与带宽联合分配 | [`[021-TWC-2026]Joint_Illumination...`](./[021-TWC-2026]Joint_Illumination_Power_and_Band_Allocation_for_Multi-Beam_LEO_Satellites_With_Beam-Hopping_Using_Mixed-Integer_Linear_Programming) |
+| 022 | A Comprehensive Survey of Large AI Models for Future Communications: Foundations, Applications and Challenges | COMST 2026 | 大模型综述、AI通信、6G | [`[022-COMST-2026]A_Comprehensive...`](./[022-COMST-2026]A_Comprehensive_Survey_of_Large_AI_Models_for_Future_Communications_Foundations_Applications_and_Challenges) |
 
 ## 快速使用
 
