@@ -32,6 +32,7 @@
 | 020 | Time-Division Spectrum Sharing and Coordination Between Beam-Hopping NGSO Satellites and Terrestrial Networks | WCL 2026 | 时分频谱共享、跳波束、星地协同 | [`[020-WCL-2026]Time-Division...`](./[020-WCL-2026]Time-Division_Spectrum_Sharing_and_Coordination_Between_Beam-Hopping_NGSO_Satellites_and_Terrestrial_Networks) |
 | 021 | Joint Illumination Power and Band Allocation for Multi-Beam LEO Satellites With Beam-Hopping Using Mixed-Integer Linear Programming | TWC 2026 | MILP跳波束、功率与带宽联合分配 | [`[021-TWC-2026]Joint_Illumination...`](./[021-TWC-2026]Joint_Illumination_Power_and_Band_Allocation_for_Multi-Beam_LEO_Satellites_With_Beam-Hopping_Using_Mixed-Integer_Linear_Programming) |
 | 022 | A Comprehensive Survey of Large AI Models for Future Communications: Foundations, Applications and Challenges | COMST 2026 | 大模型综述、AI通信、6G | [`[022-COMST-2026]A_Comprehensive...`](./[022-COMST-2026]A_Comprehensive_Survey_of_Large_AI_Models_for_Future_Communications_Foundations_Applications_and_Challenges) |
+| 023 | Multi-Satellite Coordinated Beam Hopping for Interference Mitigation Under Tilted Beam Effects: A Graph-Theoretic Approach | WCL 2026 | 多星协调跳波束、干扰抑制、图论、倾斜波束 | [`[023-WCL-2026]Multi-Satellite...`](./[023-WCL-2026]Multi-Satellite_Coordinated_Beam_Hopping_for_Interference_Mitigation_Under_Tilted_Beam_Effects_A_Graph-Theoretic_Approach) |
 
 ## 快速使用
 
